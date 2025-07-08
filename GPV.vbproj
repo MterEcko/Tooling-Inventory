@@ -1,0 +1,544 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DEB2DDF1-1825-488A-AF8D-F65AD63529DC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>GPV.My.MyApplication</StartupObject>
+    <RootNamespace>GPV</RootNamespace>
+    <AssemblyName>GPV</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publicar\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>GPV.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>GPV.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DynamicInterop, Version=0.9.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DynamicInterop.0.9.1\lib\netstandard2.0\DynamicInterop.dll</HintPath>
+    </Reference>
+    <Reference Include="GerberLibrary">
+      <HintPath>C:\Users\JesusAnchondo\Downloads\GerberTools-master\GerberLibrary\bin\Debug\GerberLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Win32.Registry, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Win32.Registry.4.5.0\lib\net461\Microsoft.Win32.Registry.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="RDotNet, Version=1.9.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\R.NET.1.9.0\lib\netstandard2.0\RDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Log" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Security.AccessControl, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.AccessControl.4.5.0\lib\net461\System.Security.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Principal.Windows.4.5.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Windows.Forms.DataVisualization.Design" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddPalletForm.Designer.vb">
+      <DependentUpon>AddPalletForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddPalletForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddRouterDishForm.Designer.vb">
+      <DependentUpon>AddRouterDishForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddRouterDishForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddStencilForm.Designer.vb">
+      <DependentUpon>AddStencilForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddStencilForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class\ClassExtras.vb" />
+    <Compile Include="Class\ClassProvedores.vb" />
+    <Compile Include="Class\ClassAsemblys.vb" />
+    <Compile Include="DataGrids\DataGridExtra.vb" />
+    <Compile Include="DataGrids\DataGridAsembly.vb" />
+    <Compile Include="DataGrids\Setup.vb" />
+    <Compile Include="DataGrids\DataGridProyect.vb" />
+    <Compile Include="DataGrids\DataGridSuplier.vb" />
+    <Compile Include="SetupMenu.Designer.vb">
+      <DependentUpon>SetupMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SetupMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataGrids\DataGridUser.vb" />
+    <Compile Include="EditUserForm .Designer.vb">
+      <DependentUpon>EditUserForm .vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditUserForm .vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddUserForm.Designer.vb">
+      <DependentUpon>AddUserForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddUserForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Charts\ChartTotalEnsamblesFail.vb" />
+    <Compile Include="Charts\ChartTotalTensionesForStencil.vb" />
+    <Compile Include="Charts\ChartTotalTensiones.vb" />
+    <Compile Include="Class\ClassFormControlResizer.vb" />
+    <Compile Include="Class\ClassFormToolingsResizer.vb" />
+    <Compile Include="Class\ClassUsers.vb" />
+    <Compile Include="Class\ClassProyectTotal.vb" />
+    <Compile Include="Class\ClassDashboard.vb" />
+    <Compile Include="Class\ClassLogStenciles.vb" />
+    <Compile Include="Charts\ChartData.vb" />
+    <Compile Include="Class\ClassPallets.vb" />
+    <Compile Include="Class\ClassSqueegees.vb" />
+    <Compile Include="Class\ClassStenciles.vb" />
+    <Compile Include="ComboBoxStenciles.vb" />
+    <Compile Include="ComboBoxProvedores.vb" />
+    <Compile Include="ComboBoxMachines.vb" />
+    <Compile Include="DataGrids\DataGridSqueegee.vb" />
+    <Compile Include="GPVDataSet.Designer.vb">
+      <DependentUpon>GPVDataSet.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="GPVDataSet.vb">
+      <DependentUpon>GPVDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LogSqueegeForm.Designer.vb">
+      <DependentUpon>LogSqueegeForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LogSqueegeForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assemble.Designer.vb">
+      <DependentUpon>Assemble.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Assemble.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReturnStencilForm.Designer.vb">
+      <DependentUpon>ReturnStencilForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnStencilForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proyectos.vb" />
+    <Compile Include="dashboardPanel.Designer.vb">
+      <DependentUpon>dashboardPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashboardPanel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Charts\ChartTotalEnsambles.vb" />
+    <Compile Include="Graphics.vb" />
+    <Compile Include="DataGrids\DataGridLog.vb" />
+    <Compile Include="DataGrids\DataGridRouterDish.vb" />
+    <Compile Include="DataGrids\DataGridPallet.vb" />
+    <Compile Include="DataGrids\DataGridStencil.vb" />
+    <Compile Include="Db.vb" />
+    <Compile Include="EditPalletForm.Designer.vb">
+      <DependentUpon>EditPalletForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditPalletForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditRouterDishForm.Designer.vb">
+      <DependentUpon>EditRouterDishForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditRouterDishForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditStencilForm.Designer.vb">
+      <DependentUpon>EditStencilForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditStencilForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogRouterDishForm.Designer.vb">
+      <DependentUpon>LogRouterDishForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LogRouterDishForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogPalletForm.Designer.vb">
+      <DependentUpon>LogPalletForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LogPalletForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogStencilForm.Designer.vb">
+      <DependentUpon>LogStencilForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LogStencilForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ComboBoxProyectos.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PalletSearch.Designer.vb">
+      <DependentUpon>PalletSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PalletSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pallet.Designer.vb">
+      <DependentUpon>Pallet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pallet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllUser.Designer.vb">
+      <DependentUpon>AllUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AllUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RouterDish.Designer.vb">
+      <DependentUpon>RouterDish.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RouterDish.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Squeege.Designer.vb">
+      <DependentUpon>Squeege.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Squeege.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Asemblye.Designer.vb">
+      <DependentUpon>Asemblye.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Asemblye.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stencil.Designer.vb">
+      <DependentUpon>Stencil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Stencil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tooling.Designer.vb">
+      <DependentUpon>Tooling.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tooling.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="toolingFindOperator.Designer.vb">
+      <DependentUpon>toolingFindOperator.vb</DependentUpon>
+    </Compile>
+    <Compile Include="toolingFindOperator.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio.Designer.vb">
+      <DependentUpon>Inicio.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="StencilSearch.Designer.vb">
+      <DependentUpon>StencilSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StencilSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AddPalletForm.resx">
+      <DependentUpon>AddPalletForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddRouterDishForm.resx">
+      <DependentUpon>AddRouterDishForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddStencilForm.resx">
+      <DependentUpon>AddStencilForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetupMenu.resx">
+      <DependentUpon>SetupMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditUserForm .resx">
+      <DependentUpon>EditUserForm .vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddUserForm.resx">
+      <DependentUpon>AddUserForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashboardPanel.resx">
+      <DependentUpon>dashboardPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditPalletForm.resx">
+      <DependentUpon>EditPalletForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditRouterDishForm.resx">
+      <DependentUpon>EditRouterDishForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogSqueegeForm.resx">
+      <DependentUpon>LogSqueegeForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assemble.resx">
+      <DependentUpon>Assemble.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReturnStencilForm.resx">
+      <DependentUpon>ReturnStencilForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditStencilForm.resx">
+      <DependentUpon>EditStencilForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogRouterDishForm.resx">
+      <DependentUpon>LogRouterDishForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogPalletForm.resx">
+      <DependentUpon>LogPalletForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogStencilForm.resx">
+      <DependentUpon>LogStencilForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllUser.resx">
+      <DependentUpon>AllUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PalletSearch.resx">
+      <DependentUpon>PalletSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pallet.resx">
+      <DependentUpon>Pallet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RouterDish.resx">
+      <DependentUpon>RouterDish.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Squeege.resx">
+      <DependentUpon>Squeege.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Asemblye.resx">
+      <DependentUpon>Asemblye.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stencil.resx">
+      <DependentUpon>Stencil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tooling.resx">
+      <DependentUpon>Tooling.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="toolingFindOperator.resx">
+      <DependentUpon>toolingFindOperator.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StencilSearch.resx">
+      <DependentUpon>StencilSearch.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GPVDataSet.xsc">
+      <DependentUpon>GPVDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="GPVDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>GPVDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="GPVDataSet.xss">
+      <DependentUpon>GPVDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\maximize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\minus}.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\minimizesize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\pcb_stencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\frame stencil tension.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\frame stencil tension.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
